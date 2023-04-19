@@ -1,0 +1,34 @@
+#content-wrapper {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+#inventory-title {
+  margin-top: 0;
+}
+
+#inventory-list {
+  margin-bottom: 1rem;
+}
+
+.inventory-item {
+  margin-bottom: 0.5rem;
+  list-style: disc;
+  list-style-position: inside;
+}
+
+#below-min-title {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+#below-min-list {
+  margin-bottom: 1rem;
+}
+
+.below-min-item {
+  margin-bottom: 0.5rem;
+  color: red;
+  list-style-position: inside;
+}

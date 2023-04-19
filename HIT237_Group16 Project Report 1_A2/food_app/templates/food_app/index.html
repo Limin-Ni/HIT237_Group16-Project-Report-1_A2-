@@ -1,0 +1,45 @@
+
+{% extends "food_app/site_base.html" %}
+{% load static %}
+
+
+{% block page_title %}Home_page{% endblock %}
+
+{% block main_body %}
+<div class="container">
+  <img src="{% static 'food_app/qiezi.jpg' %}" alt="">
+    <div class="left">
+      <h1>Websit Brief</h1>
+      <p>ReduceFoodWaste is a website dedicated to tackling the global food waste problem. Our mission is to raise awareness about the devastating environmental, social, and economic impacts of food waste and to provide individuals, businesses, and communities with strategies and resources to reduce waste. By working together, we can make a difference and create a more sustainable and equitable food system. Join us now to help solve the global food waste problem!</p> 
+    </div>
+</div>
+<h1><strong>Group 16 Team Members</strong></h1>
+  <div class="container2">
+    
+    <div class="block" id="block1">
+      <img src="{% static 'food_app/j.png' %}" alt="Image 1">
+      <h2>{{ name_list.0 }}</h2>
+      <p>Student Number: {{ student_num_list.0 }}</p>
+      <p>Contact: <a href="mailto:{{ email }}?subject=A%20consultation%20on%20food%20waste%20reduction&body=Dear%20{{ name_list.0 }}">{{ contact_list.0 }}</a></p>
+    </div>
+    <div class="block" id="block2">
+      <img src="{% static 'food_app/k.png' %}" alt="Image 2">
+      <h2>{{ name_list.1 }}</h2>
+      <p>Student Number: {{ student_num_list.1 }}</p>
+      <p>Contact: <a href="mailto:{{ email }}?subject=A%20consultation%20on%20food%20waste%20reduction&body=Dear%20{{ name_list.1 }}">{{ contact_list.1 }}</a></p>
+    </div>
+    <div class="block" id="block3">
+      <img src="{% static 'food_app/l.png' %}" alt="Image 3">
+      <h2>{{ name_list.2 }}</h2>
+      <p>Student Number: {{ student_num_list.2 }}</p>
+      <p>Contact: <a href="mailto:{{ email }}?subject=A%20consultation%20on%20food%20waste%20reduction&body=Dear%20{{ name_list.2 }}">{{ contact_list.2 }}</a></p>
+    </div>
+    <div class="block" id="block4">
+      <img src="{% static 'food_app/t.png' %}" alt="Image 4">
+      <h2>{{ name_list.3 }}</h2>
+      <p>Student Number: {{ student_num_list.3 }}</p>
+      <p>Contact: <a href="mailto:{{ email }}?subject=A%20consultation%20on%20food%20waste%20reduction&body=Dear%20{{ name_list.3 }}">{{ contact_list.3 }}</a></p>
+    </div>
+  </div>
+</div>
+{% endblock %}

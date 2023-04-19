@@ -1,0 +1,48 @@
+{% extends "food_app/site_base.html" %}
+{% load static %}
+
+{% block page_title %}Food Waste: List Page{% endblock %}
+
+{% block page_heading %}
+  <h2>Reduce Food Waste Learnig Activities</h2>
+{% endblock %}
+
+{% block main_body %}
+    <div class="card-wrapper">
+        <div class="card">
+          <img src="{% static 'food_app/list_img/problem.jpg'%}" alt="">
+          <div class="card-content">
+            <h3>Problem</h3>
+            <p>Australia wastes 7.3 million tonnes of food, costs $20 billion, government aims to reduce by 50% by 2030.</p>
+            <button id="bt"><a href="{% url 'info' %}">Learn More</a></button>
+          </div>
+        </div>
+      
+        <div class="card">
+          <img src="{% static 'food_app/list_img/strategies.jpg'%}" alt="">
+          <div class="card-content">
+            <h3>Strategies</h3>
+            <p>Reduce food waste through smart shopping, proper refrigeration, and utilizing leftovers effectively.</p>
+            <button id="bt"><a href="{% url 'strategies' %}">Learn More</a></button>
+          </div>
+        </div>
+      
+        <div class="card">
+          <img src="{% static 'food_app/list_img/donation.jpg'%}" alt="">
+          <div class="card-content">
+            <h3>Donation</h3>
+            <p>Reduce waste and help fight food insecurity by donating excess food to food banks and local organizations.</p>
+            <button id="bt"><a href="{% url 'donation' %}">Learn More</a></button>
+          </div>
+        </div>
+      
+        <div class="card">
+          <img src="{% static 'food_app/list_img/guides.jpg'%}" alt="">
+          <div class="card-content">
+            <h3>Food Tracker</h3>
+            <p>"My Food Inventory" helps you track food reserves, plan meals and shopping, reduce waste, and promote sustainability.</p>
+            <button id="bt"><a href="{% url 'problem' %}">Learn More</a></button>
+          </div>
+        </div>
+      </div>
+{% endblock %}

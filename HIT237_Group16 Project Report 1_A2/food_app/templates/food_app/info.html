@@ -1,0 +1,19 @@
+
+{% extends "food_app/site_base.html" %}
+
+	{% block page_title %}
+        General Information
+	{% endblock %}
+
+	{% block page_heading %}
+        <h3 style="color: blue;" >Food Waste in Australia General Information</h3>
+	{% endblock %}
+
+	{% block main_body %}
+        <div class="project_content">
+            {% for key, value in detail_data.items %} 
+                <h3>{{ key }}</h3>
+                <p>{{ value }}</p>
+            {% endfor %}
+        </div>
+	{% endblock %}

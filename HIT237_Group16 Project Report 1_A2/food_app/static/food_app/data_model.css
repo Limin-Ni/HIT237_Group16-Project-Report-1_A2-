@@ -1,0 +1,31 @@
+#data-model-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .data-model-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+  }
+  
+  .data-model-table th, .data-model-table td {
+    border: 1px solid #666262;
+    padding: 8px;
+  }
+  
+  .data-model-table th {
+    background-color: #3388a2;
+    color: rgb(210, 204, 204);
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  .data-model-table td {
+    text-align: left;
+  }
+  
+  .data-model-table td strong {
+    font-weight: bold;
+  }
+  

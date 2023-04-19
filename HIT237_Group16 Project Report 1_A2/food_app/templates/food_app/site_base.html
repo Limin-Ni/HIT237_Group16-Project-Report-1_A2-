@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title -->
+	<title>
+    {% block page_title %}ReduceFoodWaste{% endblock %}
+    </title>
+    <!-- CSS Files Links -->
+  <link rel="stylesheet" href="{% static 'food_app/main.css' %}" > 
+  <link rel="stylesheet" href="{% static 'food_app/index.css' %}" > 
+  <link rel="stylesheet" href="{% static 'food_app/problem.css' %}" > 
+  <link rel="stylesheet" href="{% static 'food_app/strategy.css' %}" > 
+  <link rel="stylesheet" href="{% static 'food_app/donation.css' %}" > 
+  <link rel="stylesheet" href="{% static 'food_app/list.css' %}" > 
+  <link rel="stylesheet" href="{% static 'food_app/data_model.css' %}" > 
+</head>	 
+<body>
+	<div id="wrapper">
+		<header id="header">
+			<div id="logo">
+				<h1><a href="{% url 'home' %}" class="logo"><span>R</span>educe<span>F</span>ood<span>W</span>aste</h1>
+			</div>
+			<nav id="nav">
+				<ul>
+					<li><a href="{% url 'home' %}">Home</a></li>
+					<li><a href="{% url 'list' %}">LearningActivities</a></li>
+					<li><a href="{% url 'detail' %}">Detail</a></li>   
+					<li><a href="{% url 'data_model' %}">DataModel</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section id="main">
+				{% block page_heading %} {% endblock %}
+				{% block main_body %}{% endblock %}
+		</section>
+		<footer id="footer">
+			<p>&copy; 2023 HIT237 Building Interactive Software
+			Group Project 12 Static Website ReduceFoodWaste.</p>
+			<p>Contact us: <a href="mailto:{{ email }}?subject=A%20consultation%20on%20food%20waste%20reduction&body=Dear%20" class="email-link">ReduceFoodWaste@hotmail.com</a></p>
+
+		</footer>
+	</div>
+</body>
+
+</html>

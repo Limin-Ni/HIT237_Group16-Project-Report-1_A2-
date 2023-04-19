@@ -1,0 +1,29 @@
+{% extends "food_app/site_base.html" %}
+
+{% block main_body %}
+<div id="content-wrapper">
+    <h1 id="inventory-title">My Food Inventory</h1>
+
+    <p id="inventory-description">Below are the items in my inventory:</p>
+
+    {% if food_items %}
+      <ul id="inventory-list">
+        {% for food_item in food_items %}
+          <li class="inventory-item">{{ food_item.name }} - {{ food_item.quantity }} (minimum: {{ food_item.minimum_quantity }})</li>
+        {% endfor %}
+      </ul>
+
+      {% if below_min_items %}
+        <hr>
+        <h2 id="below-min-title">Items Below Minimum Quantity:</h2>
+        <ul id="below-min-list">
+          {% for food_item in below_min_items %}
+            <li class="below-min-item">{{ food_item.name }} - {{ food_item.quantity }} (minimum: {{ food_item.minimum_quantity }})</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% else %}
+      <p id="no-items-message">No items yet. Add some!</p>
+    {% endif %}
+  </div>
+{% endblock %}

@@ -1,0 +1,21 @@
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  td {
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    padding: 5px;
+  }
+  

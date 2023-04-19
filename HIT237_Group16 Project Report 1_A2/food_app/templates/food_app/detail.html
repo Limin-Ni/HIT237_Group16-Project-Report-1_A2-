@@ -1,0 +1,13 @@
+{% extends "food_app/site_base.html" %}
+{% load static %}
+{% block page_title %}
+	Food Waste: List Page
+{% endblock %}
+
+{% block main_body %}
+    <h1>{{ item.name }}</h1>
+    <p>{{ item.description }}</p>
+    <p><strong style="font-size: 20px; color: red;">Goals:</strong> {{ item.goals }}</p>
+    <img src="{% static item.img_url %}" alt="donation">          
+{% endblock %}
+

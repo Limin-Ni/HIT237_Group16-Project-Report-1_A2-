@@ -1,0 +1,13 @@
+.strategies-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  
+  #strategy1, #strategy2, #strategy3 {
+    width: 30%;
+    padding: 20px;
+    border: 1px solid black;
+  }
+  

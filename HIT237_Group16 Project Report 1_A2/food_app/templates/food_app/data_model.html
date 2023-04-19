@@ -1,0 +1,36 @@
+{% extends "food_app/site_base.html" %}
+{% load static %}
+
+<!-- page title --------------------------------->
+{% block page_title %}Data Model Page{% endblock %}
+
+<!-- heading -------------------------------------->
+{% block page_heading %}
+<h3>Data model tracks restaurant plate waste</h3>
+{% endblock %}
+
+<!-- body ---------------------------------------->
+{% block main_body %}
+<div id="data-model-container">
+    <table class="data-model-table">
+        <thead>
+            <tr>
+                <th>Field Name</th>
+                <th>Purpose</th>
+                <th>Data Type</th>
+                <th>Validation/Constraint Requirements</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for data in detail_data %}
+            <tr>
+                <td>{{ data.Field_Name }}</td>
+                <td>{{ data.Purpose }}</td>
+                <td>{{ data.Data_Type }}</td>
+                <td>{{ data.Validation }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

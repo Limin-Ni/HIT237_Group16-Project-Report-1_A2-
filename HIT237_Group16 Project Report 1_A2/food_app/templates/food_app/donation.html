@@ -1,0 +1,30 @@
+{% extends "food_app/site_base.html" %}
+{% load static %}
+
+{% block main_body %}
+  <h1>Donate to Reduce Food Waste</h1>
+  <p>Thank you for your interest in reducing food waste! Your donation will help support our efforts to educate people about the impact of food waste and how to prevent it.</p>
+
+  <div id="donation-info">
+    <h2>Donation Information</h2>
+    <table>
+      <tr>
+        <td><img src="{% static 'food_app/donate1.jpg' %}" alt="donation"></td>
+        <td><img src="{% static 'food_app/donate2.jpg' %}" alt="image1"></td>
+        <td><img src="{% static 'food_app/donate3.jpg' %}" alt="image2"></td>
+      </tr>
+      <tr>
+        <td><img src="{% static 'food_app/donate4.jpg' %}" alt="image3"></td>
+        <td><img src="{% static 'food_app/donate5.jpg' %}" alt="image4"></td>
+        <td><img src="{% static 'food_app/donate6.jpg' %}" alt="image5"></td>
+      </tr>
+    </table>
+    <p>To make a donation, please send us an email with the following information:</p>
+    <ul>
+      <li>Your name</li>
+      <li>The amount you would like to donate</li>
+      <li>Your preferred payment method (credit card or PayPal)</li>
+    </ul>
+    <p>Once we receive your email, we will send you instructions on how to complete your donation. Thank you again for your support!</p>
+  </div>
+{% endblock %}
